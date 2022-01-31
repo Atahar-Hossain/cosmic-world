@@ -45,7 +45,17 @@ nav {
 .navigation {
   display: flex;
 }
-
+.bars {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+#nav-toggler {
+  display: none;
+}
+.nav-toggler-icon {
+  display: none;
+}
 nav ul {
 }
 
@@ -395,6 +405,15 @@ nav ul li a {
   .about-heading {
     font-size: 26px;
     margin-bottom: 20px;
+  }
+  .nav-toggler-icon {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    top: 200px;
+    left: 0px;
+    width: 100%;
   }
 }
 /* responsive part end */
