@@ -74,14 +74,16 @@ nav ul li a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 2rem;
-  min-height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  min-height: 500px;
 }
 
 .banner-details {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  align-items: left;
+  flex-direction: column;
 }
 
 .banner-heading {
@@ -106,6 +108,20 @@ nav ul li a {
 
 .banner-image img {
   width: 100%;
+}
+.banner-primary-button {
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #d22779, #ff008e);
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 5px;
+  box-shadow: 0 7px 0 0 #af2065;
+  position: relative;
+  top: 0px;
 }
 
 .primary-button {
@@ -235,6 +251,7 @@ nav ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4em;
+  justify-items: center;
 }
 .photo {
   width: 340px;
@@ -262,6 +279,7 @@ nav ul li a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
+  justify-items: center;
 }
 .contact-image {
 }
@@ -312,5 +330,71 @@ nav ul li a {
   text-decoration: none;
   font-size: 14px;
 }
+
 /* copyright section end */
 /* main end */
+/* responsive part start */
+@media only screen and (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-image img {
+  }
+}
+@media screen and (max-width: 820px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-details {
+    text-align: center;
+  }
+  .content-image {
+    width: 70%;
+    margin: auto;
+  }
+  .card-items {
+    grid-template-columns: repeat(1, 1fr);
+    background-image: none;
+  }
+  .card {
+    width: 300px;
+    margin: auto;
+  }
+  .banner-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banner-heading {
+    font-size: 30px;
+    margin-top: 60px;
+    text-align: center;
+    width: 70%;
+  }
+  .banner-image img {
+    width: 70%;
+  }
+  #banner-paragraph {
+    font-size: 16px;
+    text-align: center;
+    width: 70%;
+  }
+  #about-paragraph {
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .about-heading {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
+/* responsive part end */
