@@ -255,4 +255,62 @@ nav ul li a {
 }
 /* gallery end */
 
+/* contact start */
+#contact {
+}
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+.contact-image {
+}
+.contact-image img {
+  width: 100%;
+}
+.contact-form {
+}
+#contact-form {
+  text-align: center;
+  display: inline-block;
+}
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  border: 1px solid #ff008e;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.609);
+  padding: 15px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  outline: 0px;
+}
+
+#contact-form textarea {
+  outline: 1px solid #ff008e;
+}
+#contact-form input:hover {
+  outline: 1px solid #ff008e;
+}
+/* contact end */
+
+/* copyright section start */
+#copyright {
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+.copyright-content {
+  text-align: center;
+}
+.copyright-content h4 {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.609);
+  font-weight: 300;
+}
+.copyright-content h4 a {
+  color: #ff008e;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* copyright section end */
 /* main end */
